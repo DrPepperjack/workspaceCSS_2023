@@ -7,7 +7,9 @@
 */
 
 /* 00: CSS Variables */
-
+:root{
+    --page-color: hsla(180, 30%, 60%, 0.3);
+}
 
 /* 01: Color */
 html{
