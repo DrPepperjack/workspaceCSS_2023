@@ -8,8 +8,19 @@
 
 /* 00: CSS Variables */
 
-/* 01: Color */
 
+/* 01: Color */
+html{
+    background-color: hsla(155, 40%, 89%, 0.9);
+    padding: 5%;
+}
+
+body{
+    background-color: hsla(210, 20%, 59%, 0.3);
+    color: hsl(195, 45%, 25%);
+    padding: 10%;
+}
 /* 02: Font Style */
+
 
 /* 03: Font Size */
