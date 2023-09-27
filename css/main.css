@@ -2,16 +2,15 @@
 =============================
 00: CSS Variables
 01: Color
-02: Font Style
-03: Font Size
-*/
+/* 02: Typography */
+/* 03: Layout */
 
 /* 00: CSS Variables */
 :root{
     --page-color: hsla(229, 84%, 46%, 0.8);
-    --body-color: hsla(228, 10%, 30%, 0.25);
-    --sidebar-color: hsla(0, 0%, 0%, 0.75);
-    --footbar-color: hsla(229, 87%, 38%, 0);
+    --body-color: hsla(125, 72%, 45%, 0.25);
+    --sidebar-color: hsla(0, 93%, 32%, 0.75);
+    --footbar-color: hsl(0, 94%, 18%);
     --tab-color: hsla(266, 71%, 49%, 0.75);
 }
  
@@ -37,7 +36,10 @@ body{
 
 /* 04: For test */
 div#zen-supporting{
-    display:none;
+    position: relative;
+    top: 67%;
+    width: 40%;
+    left: 150px;
 }
 aside.sidebar{
     display:none;
