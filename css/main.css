@@ -17,7 +17,7 @@
  
 /* 01: Color */
 html{
-    background-color: hsla(155, 40%, 89%, 0.9);
+    background-color: hsla(155, 51%, 38%, 0.9);
     padding: 5%;
     
 }
@@ -41,4 +41,14 @@ div#zen-supporting{
 }
 aside.sidebar{
     display:none;
+}
+div.extra2{
+    position:fixed;
+    top: 85%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: var(--footbar-height);
+    background-color: var(--footbar-color);
 }
