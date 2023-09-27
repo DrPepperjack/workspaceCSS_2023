@@ -15,6 +15,16 @@
 }
  
 /* 01: Color */
+html{
+    background-color: hsla(356, 50%, 77%, 0.9);
+    padding: 5%;
+    
+}
+
+body{
+    background-color: var(--body-color);
+
+}
 
 /* 02: Typography */
 
