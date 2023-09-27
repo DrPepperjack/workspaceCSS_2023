@@ -9,14 +9,14 @@
 :root{
     --page-color: hsla(229, 84%, 46%, 1);
     --body-color: hsla(125, 72%, 45%, 1);
-    --sidebar-color: hsla(0, 93%, 32%, 1);
-    --footbar-color: hsl(0, 94%, 18%);
+    --sidebar-color: rgba(129, 18, 18, 0.699);
+    --footbar-color: hsl(0, 29%, 29%);
     --tab-color: hsla(266, 71%, 49%, 1);
 }
  
 /* 01: Color */
 html{
-    background-color: hsla(356, 50%, 77%, 0.9);
+    background-color: hsla(187, 71%, 44%, 0.9);
     padding: 5%;
     
 }
@@ -32,14 +32,15 @@ body{
 /* 03: Layout */
 
 /* 04: For test */
-div#zen-supporting{
-    position: relative;
-    top: 100px;
-    width: 1000px;
-    left: 30%;
+div.explanation, div.requirements, div.benefits, div.participation{
+    position: fixed;
+    top: 85vh;
+    width: 30%;
+    padding: 2%;
+    background-image: url(../img/newspaper3.jpg);
 }
 aside.sidebar{
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 20%;
