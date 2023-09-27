@@ -37,9 +37,9 @@ body{
 /* 04: For test */
 div#zen-supporting{
     position: relative;
-    top: 67%;
-    width: 40%;
-    left: 150px;
+    top: 45%;
+    width: 25%;
+    left: 100%;
 }
 aside.sidebar{
     display:none;
