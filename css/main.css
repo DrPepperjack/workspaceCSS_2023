@@ -7,11 +7,11 @@
 
 /* 00: CSS Variables */
 :root{
-    --page-color: hsla(229, 84%, 46%, 0.8);
-    --body-color: hsla(125, 72%, 45%, 0.25);
-    --sidebar-color: hsla(0, 93%, 32%, 0.75);
+    --page-color: hsla(229, 84%, 46%, 1);
+    --body-color: hsla(125, 72%, 45%, 1);
+    --sidebar-color: hsla(0, 93%, 32%, 1);
     --footbar-color: hsl(0, 94%, 18%);
-    --tab-color: hsla(266, 71%, 49%, 0.75);
+    --tab-color: hsla(266, 71%, 49%, 1);
 }
  
 /* 01: Color */
