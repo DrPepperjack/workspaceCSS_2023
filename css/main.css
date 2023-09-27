@@ -7,11 +7,11 @@
 
 /* 00: CSS Variables */
 :root{
-    --page-color: hsla(229, 84%, 46%, 1);
-    --body-color: hsla(125, 72%, 45%, 1);
-    --sidebar-color: rgba(129, 18, 18, 0.699);
+    --page-color: hsla(229, 84%, 46%, 0.5);
+    --body-color: hsla(125, 72%, 45%, 0.5);
+    --sidebar-color: rgba(129, 18, 18, 0.6);
     --footbar-color: hsl(0, 29%, 29%);
-    --tab-color: hsla(266, 71%, 49%, 1);
+    --tab-color: hsla(266, 71%, 49%, 0.5);
 }
  
 /* 01: Color */
@@ -36,7 +36,7 @@ div.explanation, div.requirements, div.benefits, div.participation{
     position: fixed;
     top: 85vh;
     width: 30%;
-    padding: 2%;
+    padding: 5%;
     background-image: url(../img/newspaper3.jpg);
 }
 aside.sidebar{
