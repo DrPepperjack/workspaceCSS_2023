@@ -34,19 +34,22 @@ body{
 /* 04: For test */
 div#zen-supporting{
     position: relative;
-    top: 45px;
-    width: 20px;
-    left: 20px;
+    top: 100px;
+    width: 1000px;
+    left: 30%;
 }
 aside.sidebar{
-    display:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
 }
 div.extra2{
     position:fixed;
     top: 15%;
     bottom: 10px;
-    left: 60px;
-    right: 10vh;
+    left: 100px;
+    right: 10px;
     width: 5%;
     height: var(--footbar-height);
     background-color: var(--footbar-color);
