@@ -50,7 +50,14 @@ header h1{
 }
 h3{
     font-family: 'Ranchers',cursive;
-    font-size: 1.25em;
+    font-size: 1.2em;
+    text-align: center;
+    text-emphasis: bold;
+    text-shadow: 0cap 0.1em black;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 
