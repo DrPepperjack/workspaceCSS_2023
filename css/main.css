@@ -90,6 +90,10 @@ div.explanation h3, div.requirements h3,div.benefits h3,div.participation h3{
     width:var(--tab-width);
     height: var(--tab-height);
     background-color: var(--tab-color);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;   
+    border-bottom-left-radius: 50px;
 
 }
 aside.sidebar{
@@ -155,7 +159,4 @@ p:nth-child(2n){
 }
 p:nth-child(2n+1){
     background-color: rgb(78, 225, 225);
-}
-html{
-    border-radius: 50px;   
 }
