@@ -72,11 +72,6 @@ div.explanation, div.requirements,div.benefits,div.participation{
     margin:10px;
     border: 1px solid black;
     background-image: url(../img/newspaper3.jpg);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;   
-    border-bottom-left-radius: 50px;
-
 }
 div.explanation{
     left: 0%;
@@ -95,6 +90,11 @@ div.explanation h3, div.requirements h3,div.benefits h3,div.participation h3{
     width:var(--tab-width);
     height: var(--tab-height);
     background-color: var(--tab-color);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;   
+    border-bottom-left-radius: 50px;
+    text-align: center;
 }
 aside.sidebar{
     position: absolute;
@@ -114,7 +114,7 @@ div.extra2{
 }
 
 /* footer -- try it outside of the clas */
-/* introductio -in the middle */
+/* introductioin the middle */
 section.intro{
     position: fixed;
     bottom: 5%;
@@ -123,6 +123,7 @@ section.intro{
     height: 80%;
     padding: 2%;
     background-image: url(../img/newspaper3.jpg);
+    transform: rotate(25deg) translate(-50px,0);
 }
 
 div.extra1{
