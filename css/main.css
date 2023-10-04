@@ -1,57 +1,124 @@
-/* Style File Created By D'Andre Lamber
+/* Style File Created By D'Andre Lambert
 =============================
-00: CSS Variables
-01: Color
-/* 02: Typography */
-/* 03: Layout */
+00: CSS variables 
+01: Color 
+02: Typography
 
-/* 00: CSS Variables */
+*/
+
+/* 00: CSS variables */
 :root{
-    --page-color: hsla(229, 84%, 46%, 0.5);
-    --body-color: hsla(125, 72%, 45%, 0.5);
-    --sidebar-color: rgba(129, 18, 18, 0.6);
-    --footbar-color: hsl(0, 29%, 29%);
-    --tab-color: hsla(266, 71%, 49%, 0.5);
+    --page-color:hsla(234, 89%, 31%, 0.9);
+    --body-color: hsla(241, 70%, 52%, 0.726);
+    --sidebar-color: rgb(76, 75, 75);
+    --footbar-color: rgb(114, 113, 112);
+    --tab-color: rgb(76, 114, 218);
+    --footbar-height: 15vh;
+    --page-position: 85%;
+    --page-width: 30%;
+    --tab-gap:2vw;
+    --tab-width: 10vw;
+    --tab-height: 5vh;
 }
- 
 /* 01: Color */
-html{
-    background-color: hsla(187, 71%, 44%, 0.9);
-    padding: 5%;
-    
-}
-
 body{
-    background-color: var(--body-color);
-
+    background-color:var(--body-color);
+    padding: 5px;
+}
+aside.sidebar{
+    background-color:var(--sidebar-color);
+}
+#zen-intro{
+    background-color:var(--page-color);
+}
+#zen-supporting{
+    background-color:var(--page-color);
 }
 
 /* 02: Typography */
+@font-face {
+    font-family: 'myfont';
+    src: url(../fonts/chunkfive.woff);
+}
+
+header h1{
+    font-family: 'myfont', sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+    line-height: 1em;
+}
+h3{
+    font-family: 'Ranchers',cursive;
+    font-size: 1.25em;
+}
 
 
 /* 03: Layout */
-
-/* 04: For test */
-div.explanation, div.requirements, div.benefits, div.participation{
+/* For test */
+div.explanation, div.requirements,div.benefits,div.participation{
     position: fixed;
-    top: 85vh;
-    width: 30%;
-    padding: 5%;
+    top: var(--page-position);
+    width: var(--page-width);
+    padding-left: 10px;
+    margin:10px;
+    border: 1px solid black;
     background-image: url(../img/newspaper3.jpg);
+}
+div.explanation{
+    left: 0%;
+}
+div.requirements{
+    left: 12vw;
+}
+div.benefits{
+    left: 24vw;
+}
+div.participation{
+    left: 36vw;
+}
+div.explanation h3, div.requirements h3,div.benefits h3,div.participation h3{
+    margin-top: -15%;
+    width:var(--tab-width);
+    height: var(--tab-height);
+    background-color: var(--tab-color);
+
 }
 aside.sidebar{
     position: absolute;
-    top: 0;
+    top: 20%;
     right: 0;
     width: 20%;
+    height: 100%;
+
 }
 div.extra2{
-    position:fixed;
-    top: 15%;
-    bottom: 10px;
-    left: 100px;
-    right: 10px;
-    width: 5%;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100%;
     height: var(--footbar-height);
     background-color: var(--footbar-color);
+}
+
+/* footer -- try it outside of the clas */
+/* introductio -in the middle */
+section.intro{
+    position: fixed;
+    bottom: 5%;
+    left: 30%;
+    width: 30%;
+    height: 80%;
+    padding: 2%;
+    background-image: url(../img/newspaper3.jpg);
+}
+
+div.extra1{
+    position: fixed;
+    bottom: 5%;
+    left: 35%;
+    width: 30%;
+    height: 80%;
+    padding: 2%;
+    background-image: url(../img/newspaper1.jpg);
 }
