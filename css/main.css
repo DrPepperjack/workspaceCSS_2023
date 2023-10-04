@@ -67,6 +67,7 @@ div.explanation, div.requirements,div.benefits,div.participation{
     position: fixed;
     top: var(--page-position);
     width: var(--page-width);
+    height:10vh;
     padding-left: 10px;
     margin:10px;
     border: 1px solid black;
@@ -131,7 +132,7 @@ div.extra1{
 }
 /* 04: other decoration */
 div.explanation:active{
-    top:15vh
+    top:10vh
 }
 
 a:hover{
