@@ -133,8 +133,6 @@ div.extra1{
 /* 04: other decoration */
 div.explanation:active{
     top:10vh;
-    border-radius: 50px;
-
 }
 
 a:hover{
@@ -157,4 +155,7 @@ p:nth-child(2n){
 }
 p:nth-child(2n+1){
     background-color: rgb(78, 225, 225);
+}
+html{
+    border-radius: 50px;   
 }
