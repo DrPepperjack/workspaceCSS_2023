@@ -42,11 +42,15 @@ aside.sidebar{
 }
 
 header h1{
+    position: relative;
+    top: 0px;
+    left: 500px;
     font-family: 'myfont', sans-serif;
     font-weight: 400;
     font-size: 1.25em;
     letter-spacing: 1px;
     line-height: 1em;
+    text-align: center;
 }
 h3{
     font-family: 'Ranchers',cursive;
@@ -72,6 +76,7 @@ div.explanation, div.requirements,div.benefits,div.participation{
     margin:10px;
     border: 1px solid black;
     background-image: url(../img/newspaper3.jpg);
+    transition: all 2.5s ease-in;
 }
 div.explanation{
     left: 0%;
@@ -95,13 +100,20 @@ div.explanation h3, div.requirements h3,div.benefits h3,div.participation h3{
     border-bottom-right-radius: 100px;   
     border-bottom-left-radius: 50px;
     text-align: center;
+    transition: background-color 2s ease-in-outs;
 }
+
+div.explanation h3:hover{
+    background-color: var(--footbar-color);
+}
+
 aside.sidebar{
     position: absolute;
     top: 20%;
     right: 0;
     width: 20%;
     height: 100%;
+    font-size: smaller;
 
 }
 div.extra2{
@@ -114,6 +126,15 @@ div.extra2{
 }
 
 /* footer -- try it outside of the clas */
+footer{
+    position: fixed;
+    bottom: 0%;
+    width: 20%;
+    text-align: center;
+    background-color: var(--footbar-color);
+    border-radius: 50px;
+    z-index: 1;
+}
 /* introductioin the middle */
 section.intro{
     position: fixed;
@@ -160,4 +181,56 @@ p:nth-child(2n){
 }
 p:nth-child(2n+1){
     background-color: rgb(78, 225, 225);
+}
+/* 05: More practice on transition */
+section.intro h3 ~p{
+    opacity: 1;
+    transition: all 3s ease-in-out;
+}
+section.intro h3:hover ~p{
+    opacity: 0;
+    transform: scale(0.2);
+}
+
+/* 06: Animation */
+footer{
+    animation: 10s ease-in-out 2s alternate infinite moveback;
+}
+@keyframes moveback{
+    from{ transform: translate(-500px,0);}
+    30%{ transform: translate(-350px,0);}
+    50%{ transform: translate(0px,0);}
+    75%{ transform: translate(350px,0);}
+    90%{ transform: translate(500px,0);}
+}
+
+/* 07: Gradient Testing */
+h2{
+    background-image: linear-gradient(darkblue, gold, darkred);
+    animation: 4s infinite running changecolor;
+}
+@keyframes changecolor{
+    from{background-image: linear-gradient(darkblue, silver, darkred);}
+    30%{background-image: linear-gradient(darkblue, gold, darkred);}
+    50%{background-image: linear-gradient(darkblue, silver, darkred);}
+    70%{background-image: linear-gradient(darkblue, gold, darkred);}
+}
+
+/* 08: Extra Features */
+div.extra1{
+    border-image: linear-gradient(orange,purple) 10 / 15px round;
+}
+
+aside.sidebar{
+    clip-path: polygon(0 0, 0 70%, 50% 100%, 100% 70%, 100% 0);
+}
+div#design-archives{
+    display: none;
+}
+
+aside.sidebar h3{
+    display: none;
+}
+aside.sidebar ul li{
+    list-style: decimal-leading-zero
 }
