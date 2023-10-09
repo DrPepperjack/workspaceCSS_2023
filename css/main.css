@@ -123,6 +123,7 @@ section.intro{
     height: 80%;
     padding: 2%;
     background-image: url(../img/newspaper3.jpg);
+    z-index: 1;
 }
 
 div.extra1{
